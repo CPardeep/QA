@@ -1,0 +1,53 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      "use strict";
+
+      //   //Excerise 1
+      //   let user = {
+      //     name: "John",
+      //     years: 30,
+      //   };
+
+      //   let { name, years: age, isAdmin = false } = user;
+
+      //   alert(name); // John
+      //   alert(age); // 30
+      //   alert(isAdmin); // false
+
+      //   Excerise 2
+      //   function submit() {
+      //     let x = "foo";
+      //     if (x == "foo") {
+      //       let y = "boo";
+      //     }
+      //     console.log(x); // 'foo'
+      //     console.log(y); // 'Reference error'
+      //   }
+      //   submit();
+
+      //   Excerise 3
+      //   A is not declared
+
+      //   Excerise 4
+      let f = (num1, num2) => num1 -num2;
+      console.log(f(5,2));
+
+      //   Excerise 5
+      let welcome = function (name, age, gender) {
+        return console.log(
+          `My name is ${name}, i am ${age} years old and of gender ${gender}`
+        );
+      };
+      welcome("Felix Cited", 20, "Male");
+
+      //   Excerise 5
+      let powerup = (n1, n2) => n1**n2;
+      console.log(powerup(3,3));
+
+      let x = () => "HELLOOOOOO";
+      console.log(x());
+    </script>
+  </body>
+</html>

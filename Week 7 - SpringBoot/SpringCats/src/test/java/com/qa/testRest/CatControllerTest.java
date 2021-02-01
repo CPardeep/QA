@@ -27,7 +27,6 @@ import com.qa.persistance.dto.CatDTO;
 @AutoConfigureMockMvc
 @Sql(scripts = {"classpath:schema.sql", "classpath:data_e.sql" }, executionPhase = ExecutionPhase.BEFORE_TEST_METHOD)
 @ActiveProfiles(profiles = "test")
-
 public class CatControllerTest {
 
 	@Autowired

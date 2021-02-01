@@ -1,0 +1,67 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      "use strict";
+      let strictA = true;
+      let strictB = 1;
+      console.log(strictA == strictB); //True
+      console.log(strictA === strictB); //False
+
+      console.log(strictA != strictB); //False
+      console.log(strictA !== strictB); //True
+
+      let now = new Date();
+      let greeting = "Good" + (now.getHours() > 17 ? " evening." : " day.");
+      console.log(greeting);
+
+      let age = 14;
+      if (age > 18 || age < 65) {
+        console.log("satisfied");
+      } else if (age < 18) {
+        console.log("minor");
+      } else {
+        console.log("not satisfied");
+      }
+
+      let ageI = age > 50 ? "satisfied" : "not satisfied";
+      console.log(ageI);
+
+      let cars = ["m3", "m5", "m6"];
+      cars.push("m8");
+
+      console.log(cars);
+
+      //excercise 1 & 2
+      let darthVader = 
+        {
+          allegiance: "empire",
+          weapon: "lightsabre",
+          sith: "true",
+          jedi: "false"
+        };
+        
+
+      console.log(
+        "Darth Vader's allegiance is to the " + darthVader.allegiance
+      );
+      console.log("Darth Vader's weapon of choice is a " + darthVader.weapon);
+      console.log("Darth Vader is a sith? " + darthVader.sith);
+      console.log("Darth Vader is a Jedi? " + darthVader.jedi);
+      
+      let{allegiance, weapon, sith, jedi} = darthVader;
+      console.log(`${weapon}, ${weapon}`);
+
+      //excercise 3
+      let myarray = ["hello", "everyone"];
+      console.log(myarray.length);
+      myarray.push("wag1", "namaste", "L");
+      console.log(myarray.length);
+      myarray.shift();
+      
+      for (let eachElement of myarray) {
+        console.log(eachElement);
+      }
+    </script>
+  </body>
+</html>
